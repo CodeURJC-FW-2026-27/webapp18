@@ -9,7 +9,6 @@
 - **Victor Álvarez**
 - **Oriol Méndez**
 - **Sergio López**
-- **Nombre Apellido**
 
 ---
 
