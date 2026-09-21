@@ -20,7 +20,20 @@
 
 ## **Functionality**
 
-### **Main Entity: Video Game**
+### **Main Entity: Genre**
+
+Video games can belong to different genres, such as:
+
+- **Action**
+- **RPG**
+- **Sports**
+- **Strategy**
+- **Horror**
+- **Adventure**
+
+### **Secondary Entities**
+
+### **Videogames**
 
 Each video game will contain the following information:
 
@@ -35,8 +48,6 @@ Each video game will contain the following information:
 - **Stock**
 - **Image**
 
-### **Secondary Entities**
-
 #### **Platform**
 
 Each video game can be available on one or more platforms.
@@ -48,16 +59,6 @@ Examples of platforms include:
 - **Xbox Series X/S**
 - **Nintendo Switch**
 
-#### **Genre**
-
-Video games can belong to different genres, such as:
-
-- **Action**
-- **RPG**
-- **Sports**
-- **Strategy**
-- **Horror**
-- **Adventure**
 
 #### **Game Type**
 
