@@ -42,7 +42,6 @@ Each video game will contain the following information:
 - **Description**
 - **Release Date**
 - **PEGI Rating**
-- **Genre**
 - **Game Type**
 - **Developer**
 - **Platform**
@@ -87,10 +86,8 @@ Each review will contain:
 
 **Game4Life** is a web application focused on **browsing and selling video games**.
 
-The application will allow users to **explore a collection of video games** and access detailed information about each game, such as its **name, price, description, genre, game type, platform, release date and PEGI rating**.
+The application will allow users to **search and explore video games according to their genre or characteristics**, such as **Action**, **RPG**, **Sports**, **Strategy**, **Horror**, **Adventure**.
 
-Video games will be organized according to their **genre, type and available platforms**, allowing users to find games more easily. A video game can be available on **multiple platforms** and can belong to **different genres or game types**.
+Once a genre is selected, users will be able to **view the video games that belong to that category** and access detailed information about each game, such as its **name, price, description, release date, PEGI rating, game type, developer, platform and image**.
 
-Users will also be able to **view and add video games** to the application. Each video game can have an associated **image** and **user reviews**.
-
-The main objective of **GameZone** is to provide a **simple and intuitive platform** where users can **discover, browse and purchase video games**.
+The main objective of **Game4Life** is to provide a **simple and intuitive platform** where users can **discover, browse and purchase video games based on their preferred gemre or characteristics**.
