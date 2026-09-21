@@ -45,7 +45,7 @@ Each video game will contain the following information:
 - **Genre**
 - **Game Type**
 - **Developer**
-- **Stock**
+- **Platform**
 - **Image**
 
 #### **Platform**
