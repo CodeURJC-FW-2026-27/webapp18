@@ -35,7 +35,9 @@ Videogames are launched in differents consoles, such as:
 - **PC**
 
 Each console will have an image of itself.
-### **Secondary Entities**
+
+---
+## **Secondary Entities**
 
 ### **Videogames**
 
