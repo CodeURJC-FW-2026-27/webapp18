@@ -50,8 +50,6 @@ Each video game will contain the following information:
 - **Genre**
 - **Image**
 
-> **Only the main entity (Video Game) will be able to have an uploaded image.**
-
 ---
 
 ## **Project Description**
