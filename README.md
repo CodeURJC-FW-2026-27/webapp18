@@ -9,6 +9,7 @@
 - **Victor Álvarez**
 - **Oriol Méndez**
 - **Sergio López**
+- **Emiliano**
 
 ---
 
