@@ -194,7 +194,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchsy-WxBW5WfeqEryWT-9bWanTN3rayX97noMhNcYCQ&s=10" alt="..." />
+                            <img class="card-img-top" src="https://alldigitales.com/wp-content/uploads/2026/07/wolverine-PS5.webp" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -206,7 +206,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Select</a></div>
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Selection</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Select</a></div>
                             </div>
                         </div>
                     </div>
@@ -269,24 +269,93 @@
             </div>
         </section>
         <!-- Form-->
-        <div class="form-container">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <h3 class="text-center mb-2">Submit Your Game</h3>
-                    <form class="form-game">
-                        <div class="row justify-content-center">
-                            <div class="col-md-4 mb-3">
-                                <label for="inputGame">Place your game</label>
-                                <input type="text" id="inputGame" class="form-control rounded-pill" placeholder="Game">
-                                <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                            </div>
-                        </div>
+       
+<section class="py-5">
+    <div class="container-fluid px-4 px-lg-5">
+        <div class="card shadow rounded-4 p-4 p-md-5">
+            <h2 class="text-center mb-4">Submit Your Game</h2>
+            <form class="form-game">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control rounded-pill" placeholder="Game name" required>
                     </div>
-                </form>
-            </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="price" class="form-label">Price (€)</label>
+                        <input type="number" id="price" class="form-control rounded-pill" placeholder="Price" min="0" step="0.01" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="date" class="form-label">Release Date</label>
+                        <input type="date" id="date" class="form-control rounded-pill" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="pegi" class="form-label">PEGI Rating</label>
+                        <select id="pegi" class="form-select rounded-pill" required>
+                            <option value="">Select PEGI</option>
+                            <option>PEGI 3</option>
+                            <option>PEGI 7</option>
+                            <option>PEGI 12</option>
+                            <option>PEGI 16</option>
+                            <option>PEGI 18</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="developer" class="form-label">Developer</label>
+                        <input type="text" id="developer" class="form-control rounded-pill" placeholder="Developer name" required>
+                    </div>
+                    
+                     <div class="col-12 col-md-6 col-lg-4">
+                        <label for="inputPlatform" class="form-label">Platform</label>
+                        <select id="inputPlatform" class="form-select rounded-pill" required>
+                            <option value="" selected disabled fw-bolder>Select Platform</option>
+                                <optgroup label="PlayStation">
+                                    <option>PlayStation 5</option>
+                                    <option>PlayStation 4</option>
+                                    <option>PSP</option>
+                                    </optgroup>
+
+                                <optgroup label="Xbox">
+                                    <option>Xbox One</option>
+                                    <option>Xbox Series X</option>
+                                    <option>Xbox 360</option>
+                                    </optgroup>
+
+                                    <optgroup label="Nintendo">
+                                    <option>Switch 2</option>
+                                    <option>Switch</option>
+                                    <option>3DS</option>
+                                    <option>Wii</option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="PC">
+                                    <option>PC</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="genre" class="form-label">Genre</label>
+                        <input type="text" id="genre" class="form-control rounded-pill" placeholder="Game genre" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="image" class="form-label">Image URL</label>
+                        <input type="url" id="image" class="form-control rounded-pill" placeholder="https://example.com/image.jpg" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea id="description" class="form-control rounded-4" rows="3" placeholder="Game description" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary rounded-pill px-5">Submit Game</button>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
+</section>
+
         <!-- Footer-->
-        <footer class="py-5 bg-black">
+       <footer class="py-5 bg-black">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
         </footer>
         <!-- Bootstrap core JS-->
