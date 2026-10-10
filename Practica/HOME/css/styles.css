@@ -8159,6 +8159,13 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-img {
+    background-image: url("https://blog.erikstore.com/wp-content/uploads/2024/04/BannerBlog_CONSOLAS_EVOLUCION.webp") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
