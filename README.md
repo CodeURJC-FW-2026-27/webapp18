@@ -35,7 +35,15 @@ Videogames are launched in differents consoles, such as:
 - **Wii**
 - **PC**
 
-Each console will have an image of itself.
+Each console will contain the following information:
+
+- **Name**
+- **Brand**
+- **Release Year**
+- **Image**
+- **Price**
+- **Rating**
+- **Description**
 
 ---
 ## **Secondary Entities**
