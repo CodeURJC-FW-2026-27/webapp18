@@ -108,7 +108,7 @@
 
                         <select class="form-select" id="marca"
                                 name="marca" required>
-                            <option value="">Selecciona una marca</option>
+                            <option value="" selected disabled fw-bold>Selecciona una marca</option>
                             <option value="Sony">Playstation</option>
                             <option value="Microsoft">Xbox</option>
                             <option value="Nintendo">Nintendo</option>
@@ -127,6 +127,7 @@
                           name="anio"
                           placeholder="Ej. 2020"
                           max="2026"
+                          min="1972"
                           step="1"
                           required>
                      </div>
@@ -165,22 +166,15 @@
                         <label for="valoracion" class="form-label">
                             Valoración (de 0 a 5) *
                         </label>
-
-                        <select class="form-select" id="valoracion"
-                                name="valoracion" required>
-                            <option value="">Selecciona una valoración</option>
-                            <option value="0">0 estrellas</option>
-                            <option value="0.5">0,5 estrellas</option>
-                            <option value="1">1 estrella</option>
-                            <option value="1.5">1,5 estrellas</option>
-                            <option value="2">2 estrellas</option>
-                            <option value="2.5">2,5 estrellas</option>
-                            <option value="3">3 estrellas</option>
-                            <option value="3.5">3,5 estrellas</option>
-                            <option value="4">4 estrellas</option>
-                            <option value="4.5">4,5 estrellas</option>
-                            <option value="5">5 estrellas</option>
-                        </select>
+                         <input type="number"
+                          class="form-control"
+                          id="valoracion"
+                          name="valoracion"
+                          placeholder="Ej. 4.3"
+                          max="5"
+                          min="0"
+                          step="0.1"
+                          required>
                     </div>
 
                     <!-- Description -->
