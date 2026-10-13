@@ -108,7 +108,7 @@
 
                         <select class="form-select" id="marca"
                                 name="marca" required>
-                            <option value="">Selecciona una marca</option>
+                            <option value="" selected disabled fw-bold>Selecciona una marca</option>
                             <option value="Sony">Playstation</option>
                             <option value="Microsoft">Xbox</option>
                             <option value="Nintendo">Nintendo</option>
@@ -126,6 +126,7 @@
                           id="anio"
                           name="anio"
                           placeholder="Ej. 2020"
+                          min="1972"
                           max="2026"
                           step="1"
                           required>
