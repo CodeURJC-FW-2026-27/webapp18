@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Uploaded images (not part of the application code)
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / local config
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
