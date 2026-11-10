@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "body-parser": "^2.4.0",
-    "express": "5.1.0",
+    "express": "^5.1.0",
     "mongodb": "^7.8.0",
     "multer": "^2.5.0",
     "mustache-express": "1.3.2"
