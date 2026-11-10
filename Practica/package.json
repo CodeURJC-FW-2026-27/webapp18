@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "watch": "nodemon -e js,html,css src/app.js"
+    "watch": "npx nodemon -e js,html,css src/app.js"
   },
   "dependencies": {
     "body-parser": "^2.4.0",
