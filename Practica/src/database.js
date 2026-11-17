@@ -13,7 +13,7 @@ if ((await consoles.find().toArray()).length === 0) {
 let play = {
     _id: new ObjectId('6af38d568722386626454d07'),
     name: 'PlayStation 5',
-    brand: 'PlayStation',
+    brand: 'Sony',
     year: 2020,
     price: 499.99,
     rate: 4.8,
@@ -132,7 +132,7 @@ let otherConsoles = [
     },
     {
         name: 'PlayStation 4',
-        brand: 'PlayStation',
+        brand: 'Sony',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUz5DbU95u9MspBarY9hh_UN2FzQk3lkwGVEH7qHffw&s=10'
     },
     {
@@ -147,7 +147,7 @@ let otherConsoles = [
     },
     {
         name: 'PSP',
-        brand: 'PlayStation',
+        brand: 'Sony',
         imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Sony-PSP-1000-Body.png'
     },
     {

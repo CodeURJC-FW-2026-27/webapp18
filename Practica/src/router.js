@@ -7,7 +7,7 @@ const upload = multer({dest: 'uploads/'});
 const PAGE_SIZE = 6;
 
 const CATEGORIES = [
-    { label: 'PlayStation', brand: 'PlayStation' },
+    { label: 'Sony', brand: 'Sony' },
     { label: 'Xbox', brand: 'Xbox' },
     { label: 'Nintendo', brand: 'Nintendo' },
     { label: 'Otros', brand: 'Otros' }
@@ -15,6 +15,13 @@ const CATEGORIES = [
 
 const router = express.Router();
 export default router;
+
+router.use((req, res, next) => {
+    res.locals.categories = buildCategories(readText(req.query.category));
+    res.locals.search = readText(req.query.search);
+    res.locals.allActive = !res.locals.search && !res.locals.categories;  
+    next();
+});
 
 function readText(value) {
     return typeof value === 'string' ? value.trim() : '';
