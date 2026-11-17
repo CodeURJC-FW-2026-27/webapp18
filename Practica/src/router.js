@@ -25,7 +25,6 @@ function consoleFromBody(body) {
     name: readText(body.name),
     brand: readText(body.brand),
     year: parseInt(body.year),
-    imagepreview: readText(body.imagepreview),
     price: parseFloat(body.price),
     rate: parseFloat(body.rate),
     description: readText(body.description),
@@ -101,6 +100,7 @@ router.get("/console/new", (req, res) => {
     action: "/console/new",
     submitText: "Añadir consola",
     cancelUrl: "/",
+    isNew: true,
   });
 });
 
@@ -122,12 +122,47 @@ router.get("/console/:id/edit", async (req, res) => {
   });
 });
 
-router.post("/console/:id/edit", async (req, res) => {
+router.post("/console/:id/edit", upload.fields([{ name: "imagepreview", maxCount: 1 }, { name: "imagemain", maxCount: 1 }]), async (req, res) => {
   const data = consoleFromBody(req.body);
   if (!data.name || !data.brand) {
     return res.status(400).send("Faltan campos obligatorios");
   }
 
+  const imagePreview = req.files && req.files.imagepreview && req.files.imagepreview[0];
+  const imageMain = req.files && req.files.imagemain && req.files.imagemain[0];
+  if (imagePreview) {
+    data.imagepreview = "/uploads/" + imagePreview.filename;
+  }
+  if (imageMain) {
+    data.imagemain = "/uploads/" + imageMain.filename;
+  }
+
   await Consoles.updateConsole(req.params.id, data);
   res.redirect(`/getconsole/${req.params.id}`);
+});
+
+router.post("/console/new", upload.fields([{ name: 'imagepreview', maxCount: 1 }, { name: 'imagemain', maxCount: 1 }]), async (req, res) => {
+    const imagePreview = req.files && req.files.imagepreview && req.files.imagepreview[0];
+    const imageMain = req.files && req.files.imagemain && req.files.imagemain[0];
+    if (!imagePreview || !imageMain) {
+        return res.status(400).send("Debes subir las dos imágenes para crear una consola");
+    }
+
+    const console = {
+        name: req.body.name,
+        brand: req.body.brand,
+        year: req.body.year,
+        imagepreview: "/uploads/" + imagePreview.filename,
+        imagemain: "/uploads/" + imageMain.filename,
+        price: req.body.price,
+        rate: req.body.rate,
+        description: req.body.description
+    };
+    await Consoles.addConsole(console);
+    res.redirect('/');
+});
+
+router.post('/delete_console', async (req, res) => {
+    await Consoles.deleteConsole(req.body.id);
+    res.redirect('/');
 });
