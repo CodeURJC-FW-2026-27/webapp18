@@ -23,7 +23,8 @@ if ((await consoles.find().toArray()).length === 0) {
     description:
       "La PlayStation 5 es la consola de novena generación de Sony que revolucionó el rendimiento en el hogar gracias a su unidad de almacenamiento SSD ultrarrápida, reduciendo drásticamente los tiempos de carga en los videojuegos. Destaca por su soporte para resolución 4K hasta a 120 FPS, tecnología de trazado de rayos (Ray Tracing) y audio 3D inmersivo. Uno de sus mayores atractivos es el mando DualSense, el cual incorpora retroalimentación háptica y gatillos adaptativos que transmiten sensaciones físicas directas a las manos del jugador. Cuenta además con retrocompatibilidad con la inmensa mayoría del catálogo de PS4.",
     imagepreview: "https://media.game.es/COVERV2/3D_L/206/206665.png",
-    imagemain: "/images/PS5.jpg",
+    imagemain:
+      "https://sm.ign.com/t/ign_es/news/a/a-triumph-/a-triumph-of-corporate-convenience-over-consumer-choice-back_1v1v.1280.jpg",
   };
 
   await consoles.deleteMany({ name: play.name });
