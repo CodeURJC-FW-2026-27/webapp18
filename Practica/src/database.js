@@ -8,6 +8,7 @@ const consoles = db.collection('Consoles');
 if ((await consoles.find().toArray()).length === 0) {
 
 
+
 let play = {
     _id: new ObjectId('6af38d568722386626454d07'),
     name: 'PlayStation 5',
@@ -111,7 +112,56 @@ addGame(play._id,{
   image: "https://xenogamesec.com/wp-content/uploads/2023/11/Marvels-Spider-Man-2-PS5.webp",
   description: "Peter Parker y Miles Morales se alían contra Kraven y Venom en un Nueva York ampliado, con cambio de personaje al instante y nuevas habilidades como las alas de telaraña."
 });
+
+let otherConsoles = [
+    {
+        name: 'Xbox Series X',
+        imagepreview: 'https://cms-assets.xboxservices.com/assets/37/d2/37d211d0-5c2c-42c6-bb71-ca7492c5e088.png?n=642227_Hero-Gallery-0_C1_857x676.png'
+    },
+    {
+        name: 'Nintendo Switch 2',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxczqUt6dLnv-9Ps1Qb-tDC5asDJrHe5vTodZXe3MJoA&s'
+    },
+    {
+        name: 'PC',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIABsSdL-afDOfwYk-3EOkjCYJdxnjDacImyKTMMxRw&s=10'
+    },
+    {
+        name: 'PlayStation 4',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUz5DbU95u9MspBarY9hh_UN2FzQk3lkwGVEH7qHffw&s=10'
+    },
+    {
+        name: 'Wii',
+        imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Wii_console.png'
+    },
+    {
+        name: 'Xbox One',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZzZgG3soprvseWE-XgbkQ9Vt5amW3Xz0LRmZofYt_A&s=10'
+    },
+    {
+        name: 'PSP',
+        imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Sony-PSP-1000-Body.png'
+    },
+    {
+        name: 'Nintendo Switch',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscX4Vxz-bAlkF_mP8uQjQob7C-cXVwROKM6e3zGYJxg&s=10'
+    },
+    {
+        name: 'Nintendo 3DS',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwbbpf70MqWqBNw3BuhVlVwOAVzC3u1hJiULb6xTw7w&s=10'
+    },
+    {
+        name: 'Xbox 360',
+        imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67ekJih3lKgvZ59qo7TwGSjjx15DTmfICM-6k-TEG3w&s=10'
+    },
+    {
+        name: 'Nintendo 64',
+        imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Nintendo-64-wController-L.jpg'
+    }
+];
+
 }
+console.log('Consoles in database:', await consoles.countDocuments());
 
 
 export async function addConsole (console) {
@@ -128,4 +178,16 @@ export async function getConsoles() {
 
 export async function getConsole(id) {
     return await consoles.findOne({_id: new ObjectId(id)});
+}
+export async function getConsolesPage(page, pageSize) {
+    return await consoles.find()
+        .sort({ _id: 1 })
+        .skip((page - 1) * pageSize)
+        .limit(pageSize)
+        .toArray();
+}
+
+export async function countConsoles() {
+    return await consoles.countDocuments();
+
 }
