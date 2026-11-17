@@ -2,9 +2,11 @@ import { addGame, deleteGame, deleteAllGames, getGames, getGame } from './adminc
 import { MongoClient, ObjectId } from 'mongodb';
 import { readFile } from 'node:fs/promises';
 
+
 const client = new MongoClient('mongodb://localhost:27017');
 const db = client.db('Games4LifeDB')
 const consoles = db.collection('Consoles');
+
 
 async function loadSampleData() {
     const sampleData = JSON.parse(await readFile(new URL('../data/data.json', import.meta.url), 'utf8'));

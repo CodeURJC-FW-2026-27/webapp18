@@ -14,7 +14,7 @@ app.set('views', './views');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static('./public/style/images'));
 
 app.use('/', router);
 
