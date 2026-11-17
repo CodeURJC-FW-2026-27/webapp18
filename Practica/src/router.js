@@ -84,3 +84,22 @@ router.get('/getconsole/:id', async (req, res) => {
     });
 });
 
+router.post('/create_console', upload.fields([{ name: 'imagepreview', maxCount: 1 }, { name: 'imagemain', maxCount: 1 }]), async (req, res) => {
+    const console = {
+        name: req.body.name,
+        brand: req.body.brand,
+        year: req.body.year,
+        imagepreview: req.files.imagepreview ? '/uploads/' + req.files.imagepreview[0].filename : null,
+        imagemain: req.files.imagemain ? '/uploads/' + req.files.imagemain[0].filename : null,
+        price: req.body.price,
+        rate: req.body.rating,
+        description: req.body.description
+    };
+    await Consoles.addConsole(console);
+    res.redirect('/');
+});
+
+router.post('/delete_console', async (req, res) => {
+    await Consoles.deleteConsole(req.body.id);
+    res.redirect('/');
+});
