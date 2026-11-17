@@ -5,6 +5,7 @@ const client = new MongoClient('mongodb://localhost:27017');
 const db = client.db('Games4LifeDB')
 const consoles = db.collection('Consoles');
 
+await consoles.deleteMany({});
 if ((await consoles.find().toArray()).length === 0) {
 
 
@@ -116,50 +117,61 @@ addGame(play._id,{
 let otherConsoles = [
     {
         name: 'Xbox Series X',
+        brand: 'Xbox',
         imagepreview: 'https://cms-assets.xboxservices.com/assets/37/d2/37d211d0-5c2c-42c6-bb71-ca7492c5e088.png?n=642227_Hero-Gallery-0_C1_857x676.png'
     },
     {
         name: 'Nintendo Switch 2',
+        brand: 'Nintendo',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxczqUt6dLnv-9Ps1Qb-tDC5asDJrHe5vTodZXe3MJoA&s'
     },
     {
         name: 'PC',
+        brand: 'Otros',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIABsSdL-afDOfwYk-3EOkjCYJdxnjDacImyKTMMxRw&s=10'
     },
     {
         name: 'PlayStation 4',
+        brand: 'PlayStation',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUz5DbU95u9MspBarY9hh_UN2FzQk3lkwGVEH7qHffw&s=10'
     },
     {
         name: 'Wii',
+        brand: 'Nintendo',
         imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Wii_console.png'
     },
     {
         name: 'Xbox One',
+        brand: 'Xbox',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZzZgG3soprvseWE-XgbkQ9Vt5amW3Xz0LRmZofYt_A&s=10'
     },
     {
         name: 'PSP',
+        brand: 'PlayStation',
         imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Sony-PSP-1000-Body.png'
     },
     {
         name: 'Nintendo Switch',
+        brand: 'Nintendo',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscX4Vxz-bAlkF_mP8uQjQob7C-cXVwROKM6e3zGYJxg&s=10'
     },
     {
         name: 'Nintendo 3DS',
+        brand: 'Nintendo',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwbbpf70MqWqBNw3BuhVlVwOAVzC3u1hJiULb6xTw7w&s=10'
     },
     {
         name: 'Xbox 360',
+        brand: 'Xbox',
         imagepreview: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67ekJih3lKgvZ59qo7TwGSjjx15DTmfICM-6k-TEG3w&s=10'
     },
     {
         name: 'Nintendo 64',
+        brand: 'Nintendo',
         imagepreview: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Nintendo-64-wController-L.jpg'
     }
 ];
-
+await consoles.insertMany(otherConsoles);
 }
 console.log('Consoles in database:', await consoles.countDocuments());
 
@@ -179,15 +191,29 @@ export async function getConsoles() {
 export async function getConsole(id) {
     return await consoles.findOne({_id: new ObjectId(id)});
 }
-export async function getConsolesPage(page, pageSize) {
-    return await consoles.find()
+function escapeRegex(text) {
+    return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function buildFilter(search, category) {
+    const filter = {};
+    if (search) {
+        filter.name = { $regex: escapeRegex(search), $options: 'i' };
+    }
+    if (category) {
+        filter.brand = category;
+    }
+    return filter;
+}
+
+export async function getConsolesPage(page, pageSize, search, category) {
+    return await consoles.find(buildFilter(search, category))
         .sort({ _id: 1 })
         .skip((page - 1) * pageSize)
         .limit(pageSize)
         .toArray();
 }
 
-export async function countConsoles() {
-    return await consoles.countDocuments();
-
+export async function countConsoles(search, category) {
+    return await consoles.countDocuments(buildFilter(search, category));
 }

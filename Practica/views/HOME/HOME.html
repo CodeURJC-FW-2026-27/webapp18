@@ -22,13 +22,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">PlayStation</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">XBOX</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Nintendo</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Otros</a></li>
+                        {{#categories}}
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url}}">{{label}}</a></li>
+                        {{/categories}}
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <form class="d-flex" role="search" action="/" method="get">
+                        <input class="form-control me-2" type="search" name="search" value="{{search}}" placeholder="Buscar..." aria-label="Buscar">
                         <button class="btn btn-outline-dark" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -47,6 +46,7 @@
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
+                    <!-- Categories-->
                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
                       {{#Consoles}}
                     <div class="col mb-5">
@@ -79,25 +79,31 @@
                     {{/Consoles}}
                  </div>
                    <!-- Pagination-->
+                {{^hasResults}}
+                <p class="text-center lead mb-5">No se han encontrado consolas.</p>
+                {{/hasResults}}
+                {{#hasResults}}
+                <!-- Pagination-->
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                         {{#hasPrevious}}
-                        <li class="page-item"><a class="page-link" href="/?page={{previousPage}}">Anterior</a></li>
+                        <li class="page-item"><a class="page-link" href="{{previousUrl}}">Anterior</a></li>
                         {{/hasPrevious}}
                         {{^hasPrevious}}
                         <li class="page-item disabled"><span class="page-link">Anterior</span></li>
                         {{/hasPrevious}}
                         {{#pages}}
-                        <li class="page-item {{#current}}active{{/current}}"><a class="page-link" href="/?page={{number}}">{{number}}</a></li>
+                        <li class="page-item {{#current}}active{{/current}}"><a class="page-link" href="{{url}}">{{number}}</a></li>
                         {{/pages}}
                         {{#hasNext}}
-                        <li class="page-item"><a class="page-link" href="/?page={{nextPage}}">Siguiente</a></li>
+                        <li class="page-item"><a class="page-link" href="{{nextUrl}}">Siguiente</a></li>
                         {{/hasNext}}
                         {{^hasNext}}
                         <li class="page-item disabled"><span class="page-link">Siguiente</span></li>
                         {{/hasNext}}
                     </ul>
                 </nav>
+                {{/hasResults}}
             </div>
         </section>
             </div>
