@@ -2,6 +2,7 @@ import express from "express";
 import multer from "multer";
 import * as Games from "./adminconsole.js";
 import * as Consoles from "./database.js";
+import { unlink } from "node:fs/promises";
 
 const upload = multer({ dest: "uploads/" });
 const PAGE_SIZE = 6;
@@ -30,6 +31,12 @@ function consoleFromBody(body) {
     description: readText(body.description),
   };
 }
+
+async function removeUploadedFiles(files = {}) {
+  const uploadedFiles = Object.values(files).flat();
+  await Promise.all(uploadedFiles.map(file => unlink(file.path)));
+}
+
 
 function buildHomeUrl(page, search, category) {
   const params = new URLSearchParams();
@@ -106,9 +113,7 @@ router.get("/console/new", (req, res) => {
 
 router.get("/console/:id/edit", async (req, res) => {
   const console = await Consoles.getConsole(req.params.id);
-  if (!console) {
-    return res.status(404).send("Consola no encontrada");
-  }
+  
 
   res.render("consoleForm", {
     console: console,
@@ -123,46 +128,86 @@ router.get("/console/:id/edit", async (req, res) => {
 });
 
 router.post("/console/:id/edit", upload.fields([{ name: "imagepreview", maxCount: 1 }, { name: "imagemain", maxCount: 1 }]), async (req, res) => {
-  const data = consoleFromBody(req.body);
-  if (!data.name || !data.brand) {
-    return res.status(400).send("Faltan campos obligatorios");
-  }
+  
+  const validName = await Consoles.validName(req.body.name, req.params.id);
+  const firstMayus = /^[\p{Lu}\d]/u.test(req.body.name.trim());
+  const validDescription = req.body.description.length > 10 && req.body.description.length < 800;
 
-  const imagePreview = req.files && req.files.imagepreview && req.files.imagepreview[0];
-  const imageMain = req.files && req.files.imagemain && req.files.imagemain[0];
-  if (imagePreview) {
-    data.imagepreview = "/uploads/" + imagePreview.filename;
-  }
-  if (imageMain) {
-    data.imagemain = "/uploads/" + imageMain.filename;
-  }
-
-  await Consoles.updateConsole(req.params.id, data);
-  res.redirect(`/getconsole/${req.params.id}`);
-});
-
-router.post("/console/new", upload.fields([{ name: 'imagepreview', maxCount: 1 }, { name: 'imagemain', maxCount: 1 }]), async (req, res) => {
+  if (validName && validDescription) {
+    const data = consoleFromBody(req.body);
     const imagePreview = req.files && req.files.imagepreview && req.files.imagepreview[0];
     const imageMain = req.files && req.files.imagemain && req.files.imagemain[0];
-    if (!imagePreview || !imageMain) {
-        return res.status(400).send("Debes subir las dos imágenes para crear una consola");
+    if (imagePreview) {
+      data.imagepreview = "/uploads/" + imagePreview.filename;
+    }
+    if (imageMain) {
+     data.imagemain = "/uploads/" + imageMain.filename;
     }
 
-    const console = {
-        name: req.body.name,
-        brand: req.body.brand,
-        year: req.body.year,
-        imagepreview: "/uploads/" + imagePreview.filename,
-        imagemain: "/uploads/" + imageMain.filename,
-        price: req.body.price,
-        rate: req.body.rate,
-        description: req.body.description
-    };
-    await Consoles.addConsole(console);
-    res.redirect('/');
+    await Consoles.updateConsole(req.params.id, data);
+
+    res.render('MessagePage', { message: "Consola actualizada correctamente", succed: true, id: req.params.id });
+    
+  } else {
+    let message = "";
+    if (!validName) {
+      message = message + "El nombre de la consola ya existe.\n";
+    }
+    if (!firstMayus) {
+      message = message + "Nombre es inválido. El primer caracter debe ser mayúscula o número.\n";
+    }
+    if (!validDescription) {
+      message = message + "Descripción inválida. Debe tener entre 10 y 800 caracteres.\n";
+    }
+    
+    await removeUploadedFiles(req.files);
+    res.render("MessagePage", { message, erroredit: true, id: req.params.id });
+  }
 });
 
-router.post('/delete_console', async (req, res) => {
-    await Consoles.deleteConsole(req.body.id);
-    res.redirect('/');
+
+router.post("/console/new", upload.fields([{ name: 'imagepreview', maxCount: 1 }, { name: 'imagemain', maxCount: 1 }]), async (req, res) => {
+
+    const validName = await Consoles.validName(req.body.name);
+    const firstMayus = /^[\p{Lu}\d]/u.test(req.body.name.trim());
+    const validDescription = req.body.description.length > 10 && req.body.description.length < 800;
+
+    if (validName && validDescription && firstMayus) {
+
+      const console = consoleFromBody(req.body);
+      const imagePreview = req.files && req.files.imagepreview && req.files.imagepreview[0];
+      const imageMain = req.files && req.files.imagemain && req.files.imagemain[0];
+      if (imagePreview) {
+        console.imagepreview = "/uploads/" + imagePreview.filename;
+      }
+      if (imageMain) {
+        console.imagemain = "/uploads/" + imageMain.filename;
+      }
+    
+      const id = await Consoles.addConsole(console);
+
+      res.render('MessagePage', { message: "Consola añadida correctamente", succed: true, id: id });
+
+    } else {
+
+      let message = "";
+      if (!validName) {
+        message = message + "El nombre de la consola ya existe.\n";
+      }
+      if (!firstMayus) {
+        message = message + "Nombre es inválido. El primer caracter debe ser mayúscula o número.\n";
+      }
+      if (!validDescription) {
+        message = message + "Descripción inválida. Debe tener entre 10 y 800 caracteres.\n";
+      }
+      
+      await removeUploadedFiles(req.files);
+      res.render('MessagePage', { message, errorcreate: true });
+    }
+});
+
+router.get('/delete_console/:id', async (req, res) => {
+    await Consoles.deleteConsole(req.params.id);
+    await Games.deleteAllGames(req.params.id);
+    res.render('MessagePage', { message: "Consola eliminada correctamente", deleted: true });
 });

@@ -1,6 +1,7 @@
 import { addGame, deleteGame, deleteAllGames, getGames, getGame } from './adminconsole.js';
 import { MongoClient, ObjectId } from 'mongodb';
 import { readFile } from 'node:fs/promises';
+import { unlink } from 'node:fs/promises';
 
 
 const client = new MongoClient('mongodb://localhost:27017');
@@ -24,11 +25,21 @@ if (await consoles.countDocuments() === 0) {
 
 
 export async function addConsole(console) {
-  await consoles.insertOne(console);
+  let result = await consoles.insertOne(console);
+  return result.insertedId;
 }
 
 export async function deleteConsole(id) {
-  await consoles.deleteOne({ _id: new ObjectId(id) });
+  const console = await consoles.findOne({ _id: new ObjectId(id) });
+  if (!console) return;
+
+  for (const image of [console.imagepreview, console.imagemain]) {
+    if (image?.startsWith("/uploads/")) {
+      await unlink("." + image);
+    }
+  }
+
+  await consoles.deleteOne({ _id: console._id });
 }
 
 export async function getConsoles() {
@@ -69,3 +80,15 @@ export async function countConsoles(search, category) {
 export async function updateConsole(id, data) {
   await consoles.updateOne({ _id: new ObjectId(id) }, { $set: data });
 }
+
+export async function validName(name, id) {
+  if (id) {
+    const existingConsole = await consoles.findOne({ name: name, _id: { $ne: new ObjectId(id) } });
+    return !existingConsole;
+  } else {
+    const existingConsole = await consoles.findOne({ name: name });
+    return !existingConsole;
+  }
+}
+
+
