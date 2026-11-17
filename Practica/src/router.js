@@ -2,6 +2,7 @@ import express from "express";
 import multer from "multer";
 import * as Games from "./adminconsole.js";
 import * as Consoles from "./database.js";
+import { unlink } from "node:fs/promises";
 
 const upload = multer({ dest: "uploads/" });
 const PAGE_SIZE = 6;
@@ -29,6 +30,11 @@ function consoleFromBody(body) {
     rate: parseFloat(body.rate),
     description: readText(body.description),
   };
+}
+
+async function removeUploadedFiles(files = {}) {
+  const uploadedFiles = Object.values(files).flat();
+  await Promise.all(uploadedFiles.map(file => unlink(file.path)));
 }
 
 
@@ -154,7 +160,7 @@ router.post("/console/:id/edit", upload.fields([{ name: "imagepreview", maxCount
       message = message + "Descripción inválida. Debe tener entre 10 y 800 caracteres.\n";
     }
     
-
+    await removeUploadedFiles(req.files);
     res.render("MessagePage", { message, erroredit: true, id: req.params.id });
   }
 });
@@ -195,7 +201,7 @@ router.post("/console/new", upload.fields([{ name: 'imagepreview', maxCount: 1 }
         message = message + "Descripción inválida. Debe tener entre 10 y 800 caracteres.\n";
       }
       
-
+      await removeUploadedFiles(req.files);
       res.render('MessagePage', { message, errorcreate: true });
     }
 });
