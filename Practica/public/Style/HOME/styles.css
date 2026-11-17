@@ -10831,3 +10831,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.pagination .page-link {
+  color: #212529;
+}
+.pagination .page-item.active .page-link {
+  background-color: #212529;
+  border-color: #212529;
+  color: #fff;
+}
