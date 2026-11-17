@@ -35,10 +35,10 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-img py-5">
+        <header class="bg-img py-5" style="background-image: url('{{console.imagemain}}')">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">PlayStation 5</h1>
+                    <h1 class="display-4 fw-bolder">{{console.name}}</h1>
                 </div>
             </div>
         </header>
@@ -64,7 +64,7 @@
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/">Volver</a></div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Editar</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/console/{{console._id}}/edit">Editar</a></div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Eliminar</a></div>

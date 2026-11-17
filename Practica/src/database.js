@@ -21,44 +21,49 @@ if (await consoles.countDocuments() === 0) {
 }
 
 
-export async function addConsole (console) {
-    await consoles.insertOne(console);
+export async function addConsole(console) {
+  await consoles.insertOne(console);
 }
 
 export async function deleteConsole(id) {
-    await consoles.deleteOne({_id: new ObjectId(id)});
+  await consoles.deleteOne({ _id: new ObjectId(id) });
 }
 
 export async function getConsoles() {
-    return await consoles.find().toArray();
+  return await consoles.find().toArray();
 }
 
 export async function getConsole(id) {
-    return await consoles.findOne({_id: new ObjectId(id)});
+  return await consoles.findOne({ _id: new ObjectId(id) });
 }
 function escapeRegex(text) {
-    return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function buildFilter(search, category) {
-    const filter = {};
-    if (search) {
-        filter.name = { $regex: escapeRegex(search), $options: 'i' };
-    }
-    if (category) {
-        filter.brand = category;
-    }
-    return filter;
+  const filter = {};
+  if (search) {
+    filter.name = { $regex: escapeRegex(search), $options: "i" };
+  }
+  if (category) {
+    filter.brand = category;
+  }
+  return filter;
 }
 
 export async function getConsolesPage(page, pageSize, search, category) {
-    return await consoles.find(buildFilter(search, category))
-        .sort({ _id: 1 })
-        .skip((page - 1) * pageSize)
-        .limit(pageSize)
-        .toArray();
+  return await consoles
+    .find(buildFilter(search, category))
+    .sort({ _id: 1 })
+    .skip((page - 1) * pageSize)
+    .limit(pageSize)
+    .toArray();
 }
 
 export async function countConsoles(search, category) {
-    return await consoles.countDocuments(buildFilter(search, category));
+  return await consoles.countDocuments(buildFilter(search, category));
+}
+
+export async function updateConsole(id, data) {
+  await consoles.updateOne({ _id: new ObjectId(id) }, { $set: data });
 }
