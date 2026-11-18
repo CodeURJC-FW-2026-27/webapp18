@@ -270,6 +270,17 @@ router.post("/console/new", upload.fields([{ name: 'imagepreview', maxCount: 1 }
     res.render('MessagePage', { message, errorcreate: true });
   }
 });
+router.get("/console/:id/game/new", (req, res) => {
+    res.render("gameForm", {
+        action: `/console/${req.params.id}/game/new`,
+        cancelUrl: `/getconsole/${req.params.id}`,
+        submitText: "Añadir videojuego",
+        pegiOptions: VALID_PEGI.map(p => ({
+            value: p,
+            selected: false
+        }))
+    });
+});
 
 router.post("/console/:id/game/new", upload.single("image"), async (req, res) => {
   const game = gameFromBody(req.body, req.file);
@@ -285,11 +296,14 @@ router.post("/console/:id/game/new", upload.single("image"), async (req, res) =>
     if (req.file) {
         await unlink(req.file.path).catch(() => {});
     }
-  res.render("MessagePage", {
-    message: errors.join("\n"),
-    errorgamecreate: true,
-    id: req.params.id
-});
+
+    res.render("MessagePage", {
+        message: errors.join("\n"),
+        errorgamecreate: true,
+        id: req.params.id,
+        savedGameData: encodeURIComponent(JSON.stringify(req.body))
+    });
+
     return;
 }
 
@@ -350,9 +364,11 @@ router.post("/console/:id/game/:gameId/edit", upload.single("image"), async (req
 });
 
 router.get("/console/:id/game/:gameId/delete", async (req, res) => {
-  await Games.deleteGame(req.params.gameId);
-   res.render("MessagePage", {
-    message: "Videojuego eliminado correctamente",
-    deleted: true
-  });
+    await Games.deleteGame(req.params.gameId);
+
+    res.render("MessagePage", {
+        message: "Videojuego eliminado correctamente",
+        gameDeleted: true,
+        consoleUrl: `/getconsole/${req.params.id}`
+    });
 });

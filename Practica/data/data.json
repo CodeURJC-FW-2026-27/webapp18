@@ -2,13 +2,13 @@
   "consoles": [
     {
       "name": "PlayStation 5",
-      "brand": "PlayStation",
+      "brand": "Sony",
       "year": 2020,
       "price": 499.99,
       "rate": 4.8,
       "description": "La PlayStation 5 es la consola de novena generación de Sony que revolucionó el rendimiento en el hogar gracias a su unidad de almacenamiento SSD ultrarrápida, reduciendo drásticamente los tiempos de carga en los videojuegos. Destaca por su soporte para resolución 4K hasta a 120 FPS, tecnología de trazado de rayos (Ray Tracing) y audio 3D inmersivo. Uno de sus mayores atractivos es el mando DualSense, el cual incorpora retroalimentación háptica y gatillos adaptativos que transmiten sensaciones físicas directas a las manos del jugador. Cuenta además con retrocompatibilidad con la inmensa mayoría del catálogo de PS4.",
-      "imagepreview": "/style/images/playstation-5-preview.jpg",
-      "imagemain": "/style/images/playstation-5-main.jpg",
+      "imagepreview": "/style/images/playstation-5-preview.png",
+      "imagemain": "/style/images/playstation-5-main.png",
       "games": [
         {
           "name": "Astro Bot",
@@ -17,7 +17,7 @@
           "pegi": 3,
           "developer": "Team Asobi",
           "genre": "Plataformas / Aventura",
-          "image": "/style/images/astro-bot-game.jpg",
+          "image": "/style/images/astro-bot-game.png",
           "description": "Un colorido juego de plataformas en el que Astro y su tripulación recorren la galaxia para reconstruir su nave. Aprovecha al máximo el mando DualSense e incluye homenajes a la historia de PlayStation."
         },
         {
@@ -27,7 +27,7 @@
           "pegi": 18,
           "developer": "Rockstar Games",
           "genre": "Acción / Mundo abierto",
-          "image": "/style/images/grand-theft-auto-vi-game.jpg",
+          "image": "/style/images/grand-theft-auto-vi-game.png",
           "description": "La nueva entrega de la saga de Rockstar nos lleva a Vice City y el estado de Leonida, con una historia protagonizada por Lucia y Jason en un enorme mundo abierto."
         },
         {
@@ -37,7 +37,7 @@
           "pegi": 12,
           "developer": "Insomniac Games",
           "genre": "Plataformas / Acción",
-          "image": "/style/images/ratchet-clank-a-new-dimension-game.jpg",
+          "image": "/style/images/ratchet-clank-a-new-dimension-game.png",
           "description": "Ratchet y Clank saltan entre dimensiones para detener al doctor Nefarious. Destaca por sus gráficos de nueva generación, su arsenal de armas y la aparición de Rivet."
         },
         {
@@ -47,7 +47,7 @@
           "pegi": 18,
           "developer": "Santa Monica Studio",
           "genre": "Acción / Aventura",
-          "image": "/style/images/god-of-war-ragnar-k-game.jpg",
+          "image": "/style/images/god-of-war-ragnar-k-game.png",
           "description": "Kratos y Atreus se enfrentan a la llegada del Fimbulwinter y al Ragnarök mientras recorren los nueve reinos de la mitología nórdica en busca de respuestas."
         },
         {
@@ -57,7 +57,7 @@
           "pegi": 18,
           "developer": "Sucker Punch Productions",
           "genre": "Acción / Aventura / Mundo abierto",
-          "image": "/style/images/ghost-of-yotei-game.jpg",
+          "image": "/style/images/ghost-of-yotei-game.png",
           "description": "Atsu, una mercenaria en el Japón feudal del siglo XVII, busca venganza contra la banda que mató a su familia en las tierras salvajes de Ezo."
         },
         {
@@ -67,7 +67,7 @@
           "pegi": 18,
           "developer": "Insomniac Games",
           "genre": "Acción / Aventura",
-          "image": "/style/images/marvel-s-wolverine-game.jpg",
+          "image": "/style/images/marvel-s-wolverine-game.png",
           "description": "Logan recorre un mundo brutal y lleno de peligros mientras se enfrenta a enemigos letales, con combate crudo y su factor de curación como seña de identidad."
         },
         {
@@ -77,7 +77,7 @@
           "pegi": 18,
           "developer": "Kojima Productions",
           "genre": "Acción / Aventura",
-          "image": "/style/images/death-stranding-2-on-the-beach-game.jpg",
+          "image": "/style/images/death-stranding-2-on-the-beach-game.png",
           "description": "Sam Porter Bridges vuelve a la misión de reconectar el mundo, con nuevos territorios, aliados y amenazas en una aventura que mezcla acción, sigilo y exploración."
         },
         {
@@ -87,7 +87,7 @@
           "pegi": 16,
           "developer": "Insomniac Games",
           "genre": "Acción / Aventura / Mundo abierto",
-          "image": "/style/images/marvel-s-spider-man-2-game.jpg",
+          "image": "/style/images/marvel-s-spider-man-2-game.png",
           "description": "Peter Parker y Miles Morales se alían contra Kraven y Venom en un Nueva York ampliado, con cambio de personaje al instante y nuevas habilidades como las alas de telaraña."
         }
       ]
@@ -95,12 +95,12 @@
     {
       "name": "Xbox Series X",
       "brand": "Xbox",
-      "imagepreview": "/style/images/xbox-series-x-preview.jpg",
+      "imagepreview": "/style/images/xbox-series-x-preview.png",
       "year": 2020,
       "price": 499.99,
       "rate": 4.7,
       "description": "Consola de Microsoft con SSD rápido, retrocompatibilidad con generaciones anteriores y juegos en alta resolución. Su catálogo combina conducción, aventura, acción y propuestas disponibles en Xbox Game Pass.",
-      "imagemain": "/style/images/xbox-series-x-main.jpg",
+      "imagemain": "/style/images/xbox-series-x-main.png",
       "games": [
         {
           "name": "Halo Infinite",
@@ -109,7 +109,7 @@
           "pegi": 16,
           "developer": "343 Industries",
           "genre": "Shooter",
-          "image": "/style/images/halo-infinite-game.jpg",
+          "image": "/style/images/halo-infinite-game.png",
           "description": "Halo Infinite es un videojuego de shooter desarrollado por 343 Industries. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -119,7 +119,7 @@
           "pegi": 3,
           "developer": "Playground Games",
           "genre": "Conducción",
-          "image": "/style/images/forza-horizon-5-game.jpg",
+          "image": "/style/images/forza-horizon-5-game.png",
           "description": "Forza Horizon 5 es un videojuego de conducción desarrollado por Playground Games. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -129,7 +129,7 @@
           "pegi": 18,
           "developer": "Bethesda Game Studios",
           "genre": "Rol / Ciencia ficción",
-          "image": "/style/images/starfield-game.jpg",
+          "image": "/style/images/starfield-game.png",
           "description": "Starfield es un videojuego de rol / ciencia ficción desarrollado por Bethesda Game Studios. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -139,7 +139,7 @@
           "pegi": 12,
           "developer": "Tango Gameworks",
           "genre": "Acción / Ritmo",
-          "image": "/style/images/hi-fi-rush-game.jpg",
+          "image": "/style/images/hi-fi-rush-game.png",
           "description": "Hi-Fi Rush es un videojuego de acción / ritmo desarrollado por Tango Gameworks. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -149,7 +149,7 @@
           "pegi": 3,
           "developer": "Asobo Studio",
           "genre": "Simulación",
-          "image": "/style/images/microsoft-flight-simulator-game.jpg",
+          "image": "/style/images/microsoft-flight-simulator-game.png",
           "description": "Microsoft Flight Simulator es un videojuego de simulación desarrollado por Asobo Studio. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -159,7 +159,7 @@
           "pegi": 18,
           "developer": "Ninja Theory",
           "genre": "Acción / Aventura",
-          "image": "/style/images/senuas-saga-hellblade-ii-game.jpg",
+          "image": "/style/images/senuas-saga-hellblade-ii-game.png",
           "description": "Senua’s Saga: Hellblade II es un videojuego de acción / aventura desarrollado por Ninja Theory. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -169,7 +169,7 @@
           "pegi": 18,
           "developer": "The Coalition",
           "genre": "Acción / Shooter",
-          "image": "/style/images/gears-5-game.jpg",
+          "image": "/style/images/gears-5-game.png",
           "description": "Gears 5 es un videojuego de acción / shooter desarrollado por The Coalition. Forma parte del catálogo disponible para Xbox Series X."
         },
         {
@@ -179,7 +179,7 @@
           "pegi": 7,
           "developer": "Moon Studios",
           "genre": "Plataformas",
-          "image": "/style/images/ori-and-the-will-of-the-wisps-game.jpg",
+          "image": "/style/images/ori-and-the-will-of-the-wisps-game.png",
           "description": "Ori and the Will of the Wisps es un videojuego de plataformas desarrollado por Moon Studios. Forma parte del catálogo disponible para Xbox Series X."
         }
       ]
@@ -187,12 +187,12 @@
     {
       "name": "Nintendo Switch 2",
       "brand": "Nintendo",
-      "imagepreview": "/style/images/nintendo-switch-2-preview.jpg",
+      "imagepreview": "/style/images/nintendo-switch-2-preview.png",
       "year": 2025,
       "price": 469.99,
       "rate": 4.7,
       "description": "Consola híbrida de Nintendo que permite jugar en televisor o en modo portátil. Incorpora controles Joy-Con 2 y ofrece títulos de Mario, Zelda y otras series populares.",
-      "imagemain": "/style/images/nintendo-switch-2-main.jpg",
+      "imagemain": "/style/images/nintendo-switch-2-main.png",
       "games": [
         {
           "name": "Mario Kart World",
@@ -201,7 +201,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Carreras",
-          "image": "/style/images/mario-kart-world-game.jpg",
+          "image": "/style/images/mario-kart-world-game.png",
           "description": "Mario Kart World es un videojuego de carreras desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -211,7 +211,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/donkey-kong-bananza-game.jpg",
+          "image": "/style/images/donkey-kong-bananza-game.png",
           "description": "Donkey Kong Bananza es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -221,7 +221,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Educativo",
-          "image": "/style/images/nintendo-switch-2-welcome-tour-game.jpg",
+          "image": "/style/images/nintendo-switch-2-welcome-tour-game.png",
           "description": "Nintendo Switch 2 Welcome Tour es un videojuego de educativo desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -231,7 +231,7 @@
           "pegi": 12,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-tears-of-the-kingdom-switch-2-edition-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-tears-of-the-kingdom-switch-2-edition-game.png",
           "description": "The Legend of Zelda: Tears of the Kingdom – Switch 2 Edition es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -241,7 +241,7 @@
           "pegi": 12,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-breath-of-the-wild-switch-2-edition-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-breath-of-the-wild-switch-2-edition-game.png",
           "description": "The Legend of Zelda: Breath of the Wild – Switch 2 Edition es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -251,7 +251,7 @@
           "pegi": 7,
           "developer": "HAL Laboratory",
           "genre": "Plataformas",
-          "image": "/style/images/kirby-and-the-forgotten-land-switch-2-edition-game.jpg",
+          "image": "/style/images/kirby-and-the-forgotten-land-switch-2-edition-game.png",
           "description": "Kirby and the Forgotten Land – Switch 2 Edition es un videojuego de plataformas desarrollado por HAL Laboratory. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -261,7 +261,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Fiesta",
-          "image": "/style/images/super-mario-party-jamboree-switch-2-edition-game.jpg",
+          "image": "/style/images/super-mario-party-jamboree-switch-2-edition-game.png",
           "description": "Super Mario Party Jamboree – Switch 2 Edition es un videojuego de fiesta desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch 2."
         },
         {
@@ -271,7 +271,7 @@
           "pegi": 12,
           "developer": "Capcom",
           "genre": "Lucha",
-          "image": "/style/images/street-fighter-6-game.jpg",
+          "image": "/style/images/street-fighter-6-game.png",
           "description": "Street Fighter 6 es un videojuego de lucha desarrollado por Capcom. Forma parte del catálogo disponible para Nintendo Switch 2."
         }
       ]
@@ -279,12 +279,12 @@
     {
       "name": "PC",
       "brand": "Otros",
-      "imagepreview": "/style/images/pc-preview.jpg",
+      "imagepreview": "/style/images/pc-preview.png",
       "year": 1981,
       "price": 899.99,
       "rate": 4.8,
       "description": "Plataforma de videojuegos configurable que abarca equipos de sobremesa y portátiles. Permite usar distintos periféricos, tiendas digitales y configuraciones gráficas. El precio mostrado es orientativo para un equipo de ejemplo.",
-      "imagemain": "/style/images/pc-main.jpg",
+      "imagemain": "/style/images/pc-main.png",
       "games": [
         {
           "name": "Minecraft",
@@ -293,7 +293,7 @@
           "pegi": 7,
           "developer": "Mojang Studios",
           "genre": "Sandbox",
-          "image": "/style/images/minecraft-game.jpg",
+          "image": "/style/images/minecraft-game.png",
           "description": "Minecraft es un videojuego de sandbox desarrollado por Mojang Studios. Forma parte del catálogo disponible para PC."
         },
         {
@@ -303,7 +303,7 @@
           "pegi": 7,
           "developer": "ConcernedApe",
           "genre": "Simulación",
-          "image": "/style/images/stardew-valley-game.jpg",
+          "image": "/style/images/stardew-valley-game.png",
           "description": "Stardew Valley es un videojuego de simulación desarrollado por ConcernedApe. Forma parte del catálogo disponible para PC."
         },
         {
@@ -313,7 +313,7 @@
           "pegi": 12,
           "developer": "Valve",
           "genre": "Puzles",
-          "image": "/style/images/portal-2-game.jpg",
+          "image": "/style/images/portal-2-game.png",
           "description": "Portal 2 es un videojuego de puzles desarrollado por Valve. Forma parte del catálogo disponible para PC."
         },
         {
@@ -323,7 +323,7 @@
           "pegi": 7,
           "developer": "Team Cherry",
           "genre": "Metroidvania",
-          "image": "/style/images/hollow-knight-game.jpg",
+          "image": "/style/images/hollow-knight-game.png",
           "description": "Hollow Knight es un videojuego de metroidvania desarrollado por Team Cherry. Forma parte del catálogo disponible para PC."
         },
         {
@@ -333,7 +333,7 @@
           "pegi": 12,
           "developer": "Re-Logic",
           "genre": "Sandbox",
-          "image": "/style/images/terraria-game.jpg",
+          "image": "/style/images/terraria-game.png",
           "description": "Terraria es un videojuego de sandbox desarrollado por Re-Logic. Forma parte del catálogo disponible para PC."
         },
         {
@@ -343,7 +343,7 @@
           "pegi": 18,
           "developer": "CD Projekt Red",
           "genre": "Rol",
-          "image": "/style/images/the-witcher-3-wild-hunt-game.jpg",
+          "image": "/style/images/the-witcher-3-wild-hunt-game.png",
           "description": "The Witcher 3: Wild Hunt es un videojuego de rol desarrollado por CD Projekt Red. Forma parte del catálogo disponible para PC."
         },
         {
@@ -353,7 +353,7 @@
           "pegi": 7,
           "developer": "Maddy Makes Games",
           "genre": "Plataformas",
-          "image": "/style/images/celeste-game.jpg",
+          "image": "/style/images/celeste-game.png",
           "description": "Celeste es un videojuego de plataformas desarrollado por Maddy Makes Games. Forma parte del catálogo disponible para PC."
         },
         {
@@ -363,20 +363,20 @@
           "pegi": 18,
           "developer": "Larian Studios",
           "genre": "Rol",
-          "image": "/style/images/baldurs-gate-3-game.jpg",
+          "image": "/style/images/baldurs-gate-3-game.png",
           "description": "Baldur’s Gate 3 es un videojuego de rol desarrollado por Larian Studios. Forma parte del catálogo disponible para PC."
         }
       ]
     },
     {
       "name": "PlayStation 4",
-      "brand": "PlayStation",
-      "imagepreview": "/style/images/playstation-4-preview.jpg",
+      "brand": "Sony",
+      "imagepreview": "/style/images/playstation-4-preview.png",
       "year": 2013,
       "price": 399.99,
       "rate": 4.7,
       "description": "Consola de Sony con un amplio catálogo de aventuras, juegos de acción y experiencias narrativas. Ofrece juego en línea y ediciones físicas y digitales.",
-      "imagemain": "/style/images/playstation-4-main.jpg",
+      "imagemain": "/style/images/playstation-4-main.png",
       "games": [
         {
           "name": "Bloodborne",
@@ -385,7 +385,7 @@
           "pegi": 16,
           "developer": "FromSoftware",
           "genre": "Acción / Rol",
-          "image": "/style/images/bloodborne-game.jpg",
+          "image": "/style/images/bloodborne-game.png",
           "description": "Bloodborne es un videojuego de acción / rol desarrollado por FromSoftware. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -395,7 +395,7 @@
           "pegi": 16,
           "developer": "Naughty Dog",
           "genre": "Aventura",
-          "image": "/style/images/uncharted-4-a-thiefs-end-game.jpg",
+          "image": "/style/images/uncharted-4-a-thiefs-end-game.png",
           "description": "Uncharted 4: A Thief’s End es un videojuego de aventura desarrollado por Naughty Dog. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -405,7 +405,7 @@
           "pegi": 16,
           "developer": "Guerrilla Games",
           "genre": "Acción / Rol",
-          "image": "/style/images/horizon-zero-dawn-game.jpg",
+          "image": "/style/images/horizon-zero-dawn-game.png",
           "description": "Horizon Zero Dawn es un videojuego de acción / rol desarrollado por Guerrilla Games. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -415,7 +415,7 @@
           "pegi": 18,
           "developer": "Naughty Dog",
           "genre": "Acción / Aventura",
-          "image": "/style/images/the-last-of-us-part-ii-game.jpg",
+          "image": "/style/images/the-last-of-us-part-ii-game.png",
           "description": "The Last of Us Part II es un videojuego de acción / aventura desarrollado por Naughty Dog. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -425,7 +425,7 @@
           "pegi": 18,
           "developer": "Santa Monica Studio",
           "genre": "Acción",
-          "image": "/style/images/god-of-war-game.jpg",
+          "image": "/style/images/god-of-war-game.png",
           "description": "God of War es un videojuego de acción desarrollado por Santa Monica Studio. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -435,7 +435,7 @@
           "pegi": 16,
           "developer": "Insomniac Games",
           "genre": "Acción",
-          "image": "/style/images/marvels-spider-man-game.jpg",
+          "image": "/style/images/marvels-spider-man-game.png",
           "description": "Marvel’s Spider-Man es un videojuego de acción desarrollado por Insomniac Games. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -445,7 +445,7 @@
           "pegi": 18,
           "developer": "Sucker Punch Productions",
           "genre": "Acción",
-          "image": "/style/images/ghost-of-tsushima-game.jpg",
+          "image": "/style/images/ghost-of-tsushima-game.png",
           "description": "Ghost of Tsushima es un videojuego de acción desarrollado por Sucker Punch Productions. Forma parte del catálogo disponible para PlayStation 4."
         },
         {
@@ -455,7 +455,7 @@
           "pegi": 7,
           "developer": "Insomniac Games",
           "genre": "Plataformas",
-          "image": "/style/images/ratchet-clank-game.jpg",
+          "image": "/style/images/ratchet-clank-game.png",
           "description": "Ratchet & Clank es un videojuego de plataformas desarrollado por Insomniac Games. Forma parte del catálogo disponible para PlayStation 4."
         }
       ]
@@ -463,12 +463,12 @@
     {
       "name": "Wii",
       "brand": "Nintendo",
-      "imagepreview": "/style/images/wii-preview.jpg",
+      "imagepreview": "/style/images/wii-preview.png",
       "year": 2006,
       "price": 249.99,
       "rate": 4.6,
       "description": "Consola de Nintendo popular por su mando con detección de movimiento y sus experiencias multijugador accesibles. Incluye juegos deportivos y grandes clásicos de Mario y Zelda.",
-      "imagemain": "/style/images/wii-main.jpg",
+      "imagemain": "/style/images/wii-main.png",
       "games": [
         {
           "name": "Wii Sports",
@@ -477,7 +477,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Deportes",
-          "image": "/style/images/wii-sports-game.jpg",
+          "image": "/style/images/wii-sports-game.png",
           "description": "Wii Sports es un videojuego de deportes desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -487,7 +487,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/super-mario-galaxy-game.jpg",
+          "image": "/style/images/super-mario-galaxy-game.png",
           "description": "Super Mario Galaxy es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -497,7 +497,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Carreras",
-          "image": "/style/images/mario-kart-wii-game.jpg",
+          "image": "/style/images/mario-kart-wii-game.png",
           "description": "Mario Kart Wii es un videojuego de carreras desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -507,7 +507,7 @@
           "pegi": 12,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-twilight-princess-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-twilight-princess-game.png",
           "description": "The Legend of Zelda: Twilight Princess es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -517,7 +517,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/new-super-mario-bros-wii-game.jpg",
+          "image": "/style/images/new-super-mario-bros-wii-game.png",
           "description": "New Super Mario Bros. Wii es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -527,7 +527,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Deportes",
-          "image": "/style/images/wii-fit-game.jpg",
+          "image": "/style/images/wii-fit-game.png",
           "description": "Wii Fit es un videojuego de deportes desarrollado por Nintendo. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -537,7 +537,7 @@
           "pegi": 12,
           "developer": "Sora Ltd.",
           "genre": "Lucha",
-          "image": "/style/images/super-smash-bros-brawl-game.jpg",
+          "image": "/style/images/super-smash-bros-brawl-game.png",
           "description": "Super Smash Bros. Brawl es un videojuego de lucha desarrollado por Sora Ltd.. Forma parte del catálogo disponible para Wii."
         },
         {
@@ -547,7 +547,7 @@
           "pegi": 3,
           "developer": "Retro Studios",
           "genre": "Plataformas", 
-          "image": "/style/images/donkey-kong-country-returns-game.jpg",
+          "image": "/style/images/donkey-kong-country-returns-game.png",
           "description": "Donkey Kong Country Returns es un videojuego de plataformas desarrollado por Retro Studios. Forma parte del catálogo disponible para Wii."
         }
       ]
@@ -555,12 +555,12 @@
     {
       "name": "Xbox One",
       "brand": "Xbox",
-      "imagepreview": "/style/images/xbox-one-preview.jpg",
+      "imagepreview": "/style/images/xbox-one-preview.png",
       "year": 2013,
       "price": 499.99,
       "rate": 4.4,
       "description": "Consola de Microsoft con juegos físicos y digitales, servicios en línea y una amplia biblioteca de acción, deportes y conducción.",
-      "imagemain": "/style/images/xbox-one-main.jpg",
+      "imagemain": "/style/images/xbox-one-main.png",
       "games": [
         {
           "name": "Forza Horizon 4",
@@ -569,7 +569,7 @@
           "pegi": 3,
           "developer": "Playground Games",
           "genre": "Conducción",
-          "image": "/style/images/forza-horizon-4-game.jpg",
+          "image": "/style/images/forza-horizon-4-game.png",
           "description": "Forza Horizon 4 es un videojuego de conducción desarrollado por Playground Games. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -579,7 +579,7 @@
           "pegi": 16,
           "developer": "343 Industries",
           "genre": "Shooter",
-          "image": "/style/images/halo-5-guardians-game.jpg",
+          "image": "/style/images/halo-5-guardians-game.png",
           "description": "Halo 5: Guardians es un videojuego de shooter desarrollado por 343 Industries. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -589,7 +589,7 @@
           "pegi": 18,
           "developer": "The Coalition",
           "genre": "Shooter",
-          "image": "/style/images/gears-of-war-4-game.jpg",
+          "image": "/style/images/gears-of-war-4-game.png",
           "description": "Gears of War 4 es un videojuego de shooter desarrollado por The Coalition. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -599,7 +599,7 @@
           "pegi": 12,
           "developer": "Rare",
           "genre": "Aventura",
-          "image": "/style/images/sea-of-thieves-game.jpg",
+          "image": "/style/images/sea-of-thieves-game.png",
           "description": "Sea of Thieves es un videojuego de aventura desarrollado por Rare. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -609,7 +609,7 @@
           "pegi": 7,
           "developer": "Moon Studios",
           "genre": "Plataformas",
-          "image": "/style/images/ori-and-the-blind-forest-game.jpg",
+          "image": "/style/images/ori-and-the-blind-forest-game.png",
           "description": "Ori and the Blind Forest es un videojuego de plataformas desarrollado por Moon Studios. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -619,7 +619,7 @@
           "pegi": 16,
           "developer": "Insomniac Games",
           "genre": "Acción",
-          "image": "/style/images/sunset-overdrive-game.jpg",
+          "image": "/style/images/sunset-overdrive-game.png",
           "description": "Sunset Overdrive es un videojuego de acción desarrollado por Insomniac Games. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -629,7 +629,7 @@
           "pegi": 16,
           "developer": "Remedy Entertainment",
           "genre": "Acción",
-          "image": "/style/images/quantum-break-game.jpg",
+          "image": "/style/images/quantum-break-game.png",
           "description": "Quantum Break es un videojuego de acción desarrollado por Remedy Entertainment. Forma parte del catálogo disponible para Xbox One."
         },
         {
@@ -639,20 +639,20 @@
           "pegi": 7,
           "developer": "Studio MDHR",
           "genre": "Acción / Plataformas",
-          "image": "/style/images/cuphead-game.jpg",
+          "image": "/style/images/cuphead-game.png",
           "description": "Cuphead es un videojuego de acción / plataformas desarrollado por Studio MDHR. Forma parte del catálogo disponible para Xbox One."
         }
       ]
     },
     {
       "name": "PSP",
-      "brand": "PlayStation",
-      "imagepreview": "/style/images/psp-preview.jpg",
+      "brand": "Sony",
+      "imagepreview": "/style/images/psp-preview.png",
       "year": 2004,
       "price": 249.99,
       "rate": 4.5,
       "description": "Consola portátil de Sony con pantalla panorámica, juegos en formato UMD y numerosas aventuras adaptadas al juego portátil.",
-      "imagemain": "/style/images/psp-main.jpg",
+      "imagemain": "/style/images/psp-main.png",
       "games": [
         {
           "name": "God of War: Chains of Olympus",
@@ -661,7 +661,7 @@
           "pegi": 18,
           "developer": "Ready at Dawn",
           "genre": "Acción",
-          "image": "/style/images/god-of-war-chains-of-olympus-game.jpg",
+          "image": "/style/images/god-of-war-chains-of-olympus-game.png",
           "description": "God of War: Chains of Olympus es un videojuego de acción desarrollado por Ready at Dawn. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -671,7 +671,7 @@
           "pegi": 12,
           "developer": "Square Enix",
           "genre": "Rol",
-          "image": "/style/images/crisis-core-final-fantasy-vii-game.jpg",
+          "image": "/style/images/crisis-core-final-fantasy-vii-game.png",
           "description": "Crisis Core: Final Fantasy VII es un videojuego de rol desarrollado por Square Enix. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -681,7 +681,7 @@
           "pegi": 7,
           "developer": "Japan Studio",
           "genre": "Ritmo",
-          "image": "/style/images/patapon-game.jpg",
+          "image": "/style/images/patapon-game.png",
           "description": "Patapon es un videojuego de ritmo desarrollado por Japan Studio. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -691,7 +691,7 @@
           "pegi": 3,
           "developer": "Japan Studio",
           "genre": "Plataformas",
-          "image": "/style/images/locoroco-game.jpg",
+          "image": "/style/images/locoroco-game.png",
           "description": "LocoRoco es un videojuego de plataformas desarrollado por Japan Studio. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -701,7 +701,7 @@
           "pegi": 12,
           "developer": "Capcom",
           "genre": "Acción / Rol",
-          "image": "/style/images/monster-hunter-freedom-unite-game.jpg",
+          "image": "/style/images/monster-hunter-freedom-unite-game.png",
           "description": "Monster Hunter Freedom Unite es un videojuego de acción / rol desarrollado por Capcom. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -711,7 +711,7 @@
           "pegi": 7,
           "developer": "Ready at Dawn",
           "genre": "Plataformas",
-          "image": "/style/images/daxter-game.jpg",
+          "image": "/style/images/daxter-game.png",
           "description": "Daxter es un videojuego de plataformas desarrollado por Ready at Dawn. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -721,7 +721,7 @@
           "pegi": 3,
           "developer": "Polyphony Digital",
           "genre": "Conducción",
-          "image": "/style/images/gran-turismo-psp-game.jpg",
+          "image": "/style/images/gran-turismo-psp-game.png",
           "description": "Gran Turismo PSP es un videojuego de conducción desarrollado por Polyphony Digital. Forma parte del catálogo disponible para PSP."
         },
         {
@@ -731,7 +731,7 @@
           "pegi": 18,
           "developer": "Kojima Productions",
           "genre": "Sigilo",
-          "image": "/style/images/metal-gear-solid-peace-walker-game.jpg",
+          "image": "/style/images/metal-gear-solid-peace-walker-game.png",
           "description": "Metal Gear Solid: Peace Walker es un videojuego de sigilo desarrollado por Kojima Productions. Forma parte del catálogo disponible para PSP."
         }
       ]
@@ -739,12 +739,12 @@
     {
       "name": "Nintendo Switch",
       "brand": "Nintendo",
-      "imagepreview": "/style/images/nintendo-switch-preview.jpg",
+      "imagepreview": "/style/images/nintendo-switch-preview.png",
       "year": 2017,
       "price": 329.99,
       "rate": 4.7,
       "description": "Consola híbrida de Nintendo que puede utilizarse en televisor, sobremesa o modo portátil. Destaca por sus juegos familiares y franquicias propias.",
-      "imagemain": "/style/images/nintendo-switch-main.jpg",
+      "imagemain": "/style/images/nintendo-switch-main.png",
       "games": [
         {
           "name": "Super Mario Odyssey",
@@ -753,7 +753,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/super-mario-odyssey-game.jpg",
+          "image": "/style/images/super-mario-odyssey-game.png",
           "description": "Super Mario Odyssey es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -763,7 +763,7 @@
           "pegi": 12,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-breath-of-the-wild-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-breath-of-the-wild-game.png",
           "description": "The Legend of Zelda: Breath of the Wild es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -773,7 +773,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Simulación",
-          "image": "/style/images/animal-crossing-new-horizons-game.jpg",
+          "image": "/style/images/animal-crossing-new-horizons-game.png",
           "description": "Animal Crossing: New Horizons es un videojuego de simulación desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -783,7 +783,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Carreras",
-          "image": "/style/images/mario-kart-8-deluxe-game.jpg",
+          "image": "/style/images/mario-kart-8-deluxe-game.png",
           "description": "Mario Kart 8 Deluxe es un videojuego de carreras desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -793,7 +793,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Shooter",
-          "image": "/style/images/splatoon-3-game.jpg",
+          "image": "/style/images/splatoon-3-game.png",
           "description": "Splatoon 3 es un videojuego de shooter desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -803,7 +803,7 @@
           "pegi": 12,
           "developer": "MercurySteam",
           "genre": "Acción / Plataformas",
-          "image": "/style/images/metroid-dread-game.jpg",
+          "image": "/style/images/metroid-dread-game.png",
           "description": "Metroid Dread es un videojuego de acción / plataformas desarrollado por MercurySteam. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -813,7 +813,7 @@
           "pegi": 12,
           "developer": "Bandai Namco Studios",
           "genre": "Lucha",
-          "image": "/style/images/super-smash-bros-ultimate-game.jpg",
+          "image": "/style/images/super-smash-bros-ultimate-game.png",
           "description": "Super Smash Bros. Ultimate es un videojuego de lucha desarrollado por Bandai Namco Studios. Forma parte del catálogo disponible para Nintendo Switch."
         },
         {
@@ -823,7 +823,7 @@
           "pegi": 7,
           "developer": "Game Freak",
           "genre": "Rol",
-          "image": "/style/images/pok-mon-legends-arceus-game.jpg",
+          "image": "/style/images/pok-mon-legends-arceus-game.png",
           "description": "Pokémon Legends: Arceus es un videojuego de rol desarrollado por Game Freak. Forma parte del catálogo disponible para Nintendo Switch."
         }
       ]
@@ -831,12 +831,12 @@
     {
       "name": "Nintendo 3DS",
       "brand": "Nintendo",
-      "imagepreview": "/style/images/nintendo-3ds-preview.jpg",
+      "imagepreview": "/style/images/nintendo-3ds-preview.png",
       "year": 2011,
       "price": 249.99,
       "rate": 4.5,
       "description": "Consola portátil de Nintendo con dos pantallas, una de ellas capaz de mostrar efecto tridimensional sin gafas en modelos compatibles.",
-      "imagemain": "/style/images/nintendo-3ds-main.jpg",
+      "imagemain": "/style/images/nintendo-3ds-main.png",
       "games": [
         {
           "name": "Super Mario 3D Land",
@@ -845,7 +845,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/super-mario-3d-land-game.jpg",
+          "image": "/style/images/super-mario-3d-land-game.png",
           "description": "Super Mario 3D Land es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -855,7 +855,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Carreras",
-          "image": "/style/images/mario-kart-7-game.jpg",
+          "image": "/style/images/mario-kart-7-game.png",
           "description": "Mario Kart 7 es un videojuego de carreras desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -865,7 +865,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-a-link-between-worlds-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-a-link-between-worlds-game.png",
           "description": "The Legend of Zelda: A Link Between Worlds es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -875,7 +875,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Simulación",
-          "image": "/style/images/animal-crossing-new-leaf-game.jpg",
+          "image": "/style/images/animal-crossing-new-leaf-game.png",
           "description": "Animal Crossing: New Leaf es un videojuego de simulación desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -885,7 +885,7 @@
           "pegi": 7,
           "developer": "Game Freak",
           "genre": "Rol",
-          "image": "/style/images/pok-mon-x-game.jpg",
+          "image": "/style/images/pok-mon-x-game.png",
           "description": "Pokémon X es un videojuego de rol desarrollado por Game Freak. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -895,7 +895,7 @@
           "pegi": 12,
           "developer": "Intelligent Systems",
           "genre": "Estrategia",
-          "image": "/style/images/fire-emblem-awakening-game.jpg",
+          "image": "/style/images/fire-emblem-awakening-game.png",
           "description": "Fire Emblem Awakening es un videojuego de estrategia desarrollado por Intelligent Systems. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -905,7 +905,7 @@
           "pegi": 7,
           "developer": "Next Level Games",
           "genre": "Aventura",
-          "image": "/style/images/luigis-mansion-dark-moon-game.jpg",
+          "image": "/style/images/luigis-mansion-dark-moon-game.png",
           "description": "Luigi’s Mansion: Dark Moon es un videojuego de aventura desarrollado por Next Level Games. Forma parte del catálogo disponible para Nintendo 3DS."
         },
         {
@@ -915,7 +915,7 @@
           "pegi": 12,
           "developer": "Project Sora",
           "genre": "Acción",
-          "image": "/style/images/kid-icarus-uprising-game.jpg",
+          "image": "/style/images/kid-icarus-uprising-game.png",
           "description": "Kid Icarus: Uprising es un videojuego de acción desarrollado por Project Sora. Forma parte del catálogo disponible para Nintendo 3DS."
         }
       ]
@@ -923,12 +923,12 @@
     {
       "name": "Xbox 360",
       "brand": "Xbox",
-      "imagepreview": "/style/images/xbox-360-preview.jpg",
+      "imagepreview": "/style/images/xbox-360-preview.png",
       "year": 2005,
       "price": 399.99,
       "rate": 4.6,
       "description": "Consola de Microsoft conocida por Xbox Live y su catálogo de juegos de acción, conducción y rol.",
-      "imagemain": "/style/images/xbox-360-main.jpg",
+      "imagemain": "/style/images/xbox-360-main.png",
       "games": [
         {
           "name": "Halo 3",
@@ -937,7 +937,7 @@
           "pegi": 16,
           "developer": "Bungie",
           "genre": "Shooter",
-          "image": "/style/images/halo-3-game.jpg",
+          "image": "/style/images/halo-3-game.png",
           "description": "Halo 3 es un videojuego de shooter desarrollado por Bungie. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -947,7 +947,7 @@
           "pegi": 18,
           "developer": "Epic Games",
           "genre": "Shooter",
-          "image": "/style/images/gears-of-war-2-game.jpg",
+          "image": "/style/images/gears-of-war-2-game.png",
           "description": "Gears of War 2 es un videojuego de shooter desarrollado por Epic Games. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -957,7 +957,7 @@
           "pegi": 3,
           "developer": "Turn 10 Studios",
           "genre": "Conducción",
-          "image": "/style/images/forza-motorsport-4-game.jpg",
+          "image": "/style/images/forza-motorsport-4-game.png",
           "description": "Forza Motorsport 4 es un videojuego de conducción desarrollado por Turn 10 Studios. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -967,7 +967,7 @@
           "pegi": 16,
           "developer": "Lionhead Studios",
           "genre": "Rol",
-          "image": "/Style/images/fable-ii-game.jpg",
+          "image": "/Style/images/fable-ii-game.png",
           "description": "Fable II es un videojuego de rol desarrollado por Lionhead Studios. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -987,7 +987,7 @@
           "pegi": 3,
           "developer": "Rare",
           "genre": "Simulación",
-          "image": "/style/images/viva-pi-ata-game.jpg",
+          "image": "/style/images/viva-pi-ata-game.png",
           "description": "Viva Piñata es un videojuego de simulación desarrollado por Rare. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -997,7 +997,7 @@
           "pegi": 7,
           "developer": "Rare",
           "genre": "Aventura",
-          "image": "/style/images/banjo-kazooie-nuts-bolts-game.jpg",
+          "image": "/style/images/banjo-kazooie-nuts-bolts-game.png",
           "description": "Banjo-Kazooie: Nuts & Bolts es un videojuego de aventura desarrollado por Rare. Forma parte del catálogo disponible para Xbox 360."
         },
         {
@@ -1007,7 +1007,7 @@
           "pegi": 16,
           "developer": "Mistwalker",
           "genre": "Rol",
-          "image": "/style/images/lost-odyssey-game.jpg",
+          "image": "/style/images/lost-odyssey-game.png",
           "description": "Lost Odyssey es un videojuego de rol desarrollado por Mistwalker. Forma parte del catálogo disponible para Xbox 360."
         }
       ]
@@ -1015,12 +1015,12 @@
     {
       "name": "Nintendo 64",
       "brand": "Nintendo",
-      "imagepreview": "/style/images/nintendo-64-preview.jpg",
+      "imagepreview": "/style/images/nintendo-64-preview.png",
       "year": 1996,
       "price": 199.99,
       "rate": 4.6,
       "description": "Consola clásica de Nintendo con cartuchos y mando analógico, destacada por sus primeros grandes juegos de plataformas y aventuras tridimensionales.",
-      "imagemain": "/style/images/nintendo-64-main.jpg",
+      "imagemain": "/style/images/nintendo-64-main.png",
       "games": [
         {
           "name": "Super Mario 64",
@@ -1029,7 +1029,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Plataformas",
-          "image": "/style/images/super-mario-64-game.jpg",
+          "image": "/style/images/super-mario-64-game.png",
           "description": "Super Mario 64 es un videojuego de plataformas desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1039,7 +1039,7 @@
           "pegi": 12,
           "developer": "Nintendo",
           "genre": "Aventura",
-          "image": "/style/images/the-legend-of-zelda-ocarina-of-time-game.jpg",
+          "image": "/style/images/the-legend-of-zelda-ocarina-of-time-game.png",
           "description": "The Legend of Zelda: Ocarina of Time es un videojuego de aventura desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1049,7 +1049,7 @@
           "pegi": 3,
           "developer": "Nintendo",
           "genre": "Carreras",
-          "image": "/style/images/mario-kart-64-game.jpg",
+          "image": "/style/images/mario-kart-64-game.png",
           "description": "Mario Kart 64 es un videojuego de carreras desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1059,7 +1059,7 @@
           "pegi": 16,
           "developer": "Rare",
           "genre": "Shooter",
-          "image": "/style/images/goldeneye-007-game.jpg",
+          "image": "/style/images/goldeneye-007-game.png",
           "description": "GoldenEye 007 es un videojuego de shooter desarrollado por Rare. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1069,7 +1069,7 @@
           "pegi": 3,
           "developer": "Rare",
           "genre": "Plataformas",
-          "image": "/style/images/banjo-kazooie-game.jpg",
+          "image": "/style/images/banjo-kazooie-game.png",
           "description": "Banjo-Kazooie es un videojuego de plataformas desarrollado por Rare. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1079,7 +1079,7 @@
           "pegi": 7,
           "developer": "Nintendo",
           "genre": "Acción",
-          "image": "/style/images/star-fox-64-game.jpg",
+          "image": "/style/images/star-fox-64-game.png",
           "description": "Star Fox 64 es un videojuego de acción desarrollado por Nintendo. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1089,7 +1089,7 @@
           "pegi": 3,
           "developer": "Rare",
           "genre": "Plataformas",
-          "image": "/style/images/donkey-kong-64-game.jpg",
+          "image": "/style/images/donkey-kong-64-game.png",
           "description": "Donkey Kong 64 es un videojuego de plataformas desarrollado por Rare. Forma parte del catálogo disponible para Nintendo 64."
         },
         {
@@ -1099,7 +1099,7 @@
           "pegi": 3,
           "developer": "Intelligent Systems",
           "genre": "Rol",
-          "image": "/style/images/paper-mario-game.jpg",
+          "image": "/style/images/paper-mario-game.png",
           "description": "Paper Mario es un videojuego de rol desarrollado por Intelligent Systems. Forma parte del catálogo disponible para Nintendo 64."
         }
       ]
