@@ -82,7 +82,7 @@ The main objective of **Game4Life** is to provide a **simple and intuitive platf
 **Sérgio López**
 [Commit 1](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/1e525b91eb74916176726b2050eef7bdbad9cb4d)
 [Commit 2](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/43986680428ed3081428416c16b2be1fbca81b7b)
-[Commit 3(https://github.com/CodeURJC-FW-2026-27/webapp18/commit/96d4f021909a2d362572d9c9416e3e5bf011bdc9)
+[Commit 3](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/96d4f021909a2d362572d9c9416e3e5bf011bdc9)
 [Commit 4](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/6d8ab86defcbfc55826d485136bb86e6d0c43c8a)
 [Commit 5](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/804905d974832c2f5723ae8224c64ca99487df56) 
  This commits are centered in the adaptation form web page to web app, the implementation of the data structures systems and its functions, and the implementation of the functionality to add a new primary element(console).
