@@ -10830,3 +10830,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
