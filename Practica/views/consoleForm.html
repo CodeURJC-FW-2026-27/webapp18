@@ -23,18 +23,8 @@
 <body>
 
     <!-- Navegation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="/">Game4Life</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Inicio</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    <!-- Header -->
+    {{>partials/header}}
+    <!-- Banner -->
     <header class="bg-dark text-white py-4">
         <div class="container text-center">
             <h2 class="fw-bolder">Game4Life</h2>
@@ -81,7 +71,7 @@
                         <select class="form-select" id="marca"
                                 name="brand" required>
                             <option value="" disabled {{^console}}selected{{/console}}>Selecciona una marca</option>
-                            <option value="PlayStation" {{#isPlayStation}}selected{{/isPlayStation}}>PlayStation</option>
+                            <option value="Sony" {{#isSony}}selected{{/isSony}}>Sony</option>
                             <option value="Xbox" {{#isXbox}}selected{{/isXbox}}>Xbox</option>
                             <option value="Nintendo" {{#isNintendo}}selected{{/isNintendo}}>Nintendo</option>
                             <option value="Otros" {{#isOtros}}selected{{/isOtros}}>Otros</option>
@@ -203,14 +193,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-5 bg-black">
-        <div class="container">
-            <p class="m-0 text-center text-white">
-                Copyright &copy; Game4Life 2026
-            </p>
-        </div>
-    </footer>
-
+    {{>partials/footer}}
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
