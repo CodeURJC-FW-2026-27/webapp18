@@ -100,4 +100,8 @@ There are many changes that were interdependent, which is why I’ve made them a
 [Commit 5](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/3ce89f550864d8856b595d1957e84ea567bb5667) 
 My main commits are centered mainly in the visual part like the pages and the images, also adding the search bar and filter by brand, I also added the data.json with the database example and the images and changes in the delete button from the videogames page.
 
+**Emiliano Sanz**
+[Commit 1](https://github.com/CodeURJC-FW-2026-27/webapp18/pull/45)
+[Commit 2](https://github.com/CodeURJC-FW-2026-27/webapp18/pull/52)
+  My commits are centered in adaptation changes such as the database mongo db, body-parser deps and the file gitignore. There is also the implemetation of edit function of the main element.
 
