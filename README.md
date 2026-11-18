@@ -76,7 +76,11 @@ The main objective of **Game4Life** is to provide a **simple and intuitive platf
 ---
 ## **Principales commits y parte de trabajo**
 
-**Victor Álvarez** This commit [Merge pull request de paso](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/a3ade8b246e8eb9c2ca93982ca774fb8c0797615) is my main commit and contains a large number of changes, including the creation of new header and footer files, modifications to the router, the creation of a new file for editing video games, and the creation and modification of the message file.Most of the changes in this commit are related to the secondary entity, implementing the functionality to create, edit, and delete video games.
+**Victor Álvarez**
+This commit [Merge pull request de paso](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/a3ade8b246e8eb9c2ca93982ca774fb8c0797615) is my main commit and contains a large number of changes, including the creation of new header and footer files, modifications to the router, the creation of a new file for editing video games, and the creation and modification of the message file.Most of the changes in this commit are related to the secondary entity, implementing the functionality to create, edit, and delete video games.
+
+
+There are many changes that were interdependent, which is why I’ve made them all at once. I preferred not to separate them.
 
 
 **Sérgio López**
