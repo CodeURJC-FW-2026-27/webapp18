@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game4Life - {{submitText}}</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/Style/favicon.ico" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <!-- CSS theme -->
+    <link href="/Style/New_element/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navegation -->
+    {{>partials/header}}
+    <!-- Banner -->
+    <header class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h2 class="fw-bolder">Game4Life</h2>
+            <p class="mb-0">{{submitText}}</p>
+        </div>
+    </header>
+
+    <!-- Form -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="formulario-consola">
+
+                <h1>
+                    <i class="bi bi-joystick"></i>
+                    {{submitText}}
+                </h1>
+
+                <p class="subtitulo">
+                    Modifica los campos del videojuego.
+                </p>
+
+                <form method="post" action="{{action}}" enctype="multipart/form-data">
+
+                    <!-- Name -->
+                    <div class="campo">
+                        <label for="name" class="form-label">Nombre *</label>
+                        <input type="text" class="form-control" id="name" name="name"
+                               value="{{game.name}}" placeholder="Nombre del juego"
+                               required maxlength="100">
+                    </div>
+
+                    <!-- Price -->
+                    <div class="campo">
+                        <label for="price" class="form-label">Precio (€) *</label>
+                        <input type="number" class="form-control" id="price" name="price"
+                               value="{{game.price}}" placeholder="Precio"
+                               min="0" step="0.01" required>
+                    </div>
+
+                    <!-- Release date -->
+                    <div class="campo">
+                        <label for="date" class="form-label">Fecha de salida *</label>
+                        <input type="date" class="form-control" id="date" name="date"
+                               value="{{releaseDate}}" min="1972-09-15" required>
+                    </div>
+
+                    <!-- PEGI -->
+                    <div class="campo">
+                        <label for="pegi" class="form-label">PEGI *</label>
+                        <select class="form-select" id="pegi" name="pegi" required>
+                            {{#pegiOptions}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>PEGI {{value}}</option>
+                            {{/pegiOptions}}
+                        </select>
+                    </div>
+
+                    <!-- Developer -->
+                    <div class="campo">
+                        <label for="developer" class="form-label">Desarrollador *</label>
+                        <input type="text" class="form-control" id="developer" name="developer"
+                               value="{{game.developer}}" placeholder="Nombre del desarrollador"
+                               required maxlength="100">
+                    </div>
+
+                    <!-- Genre -->
+                    <div class="campo">
+                        <label for="genre" class="form-label">Género *</label>
+                        <input type="text" class="form-control" id="genre" name="genre"
+                               value="{{game.genre}}" placeholder="Género del juego"
+                               required maxlength="100">
+                    </div>
+
+                    <!-- Image -->
+                    <div class="campo">
+                        <label for="image" class="form-label">Imagen</label>
+                        <input type="file" class="form-control" id="image" name="image"
+                               accept=".jpg,.jpeg,.png">
+                        <div class="form-text">
+                            Déjalo vacío para conservar la imagen actual.
+                        </div>
+                        <img src="{{game.image}}" alt="{{game.name}}" class="img-thumbnail mt-2" style="max-height: 120px;">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="campo">
+                        <label for="description" class="form-label">Descripción *</label>
+                        <textarea class="form-control" id="description" name="description"
+                                  rows="4" placeholder="Descripción del juego"
+                                  required maxlength="1000">{{game.description}}</textarea>
+                    </div>
+
+                    <!-- Submit / Cancel buttons -->
+                    <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+                        <button type="submit" class="btn btn-dark flex-fill">
+                            <i class="bi bi-check-circle"></i>
+                            {{submitText}}
+                        </button>
+
+                        <a href="{{cancelUrl}}" class="btn btn-outline-danger flex-fill">
+                            Cancelar
+                        </a>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer-->
+    {{>partials/footer}}
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
