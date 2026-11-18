@@ -52,13 +52,26 @@
                                 <a href="/console/new" class="btn btn-primary">Volver a crear</a>
                             {{/errorcreate}}
 
-                            {{#errorgamecreate}}
-                            <a href="/console/{{id}}/game/new" class="btn btn-primary">Volver a crear videojuego</a>
-                            {{/errorgamecreate}}
-
+                           {{#errorgamecreate}}
+    <a href="/console/{{id}}/game/new?data={{savedGameData}}" class="btn btn-primary">
+        Volver a crear videojuego
+    </a>
+{{/errorgamecreate}}
                             {{#errorgameedit}}
                            <a href="/console/{{id}}/game/{{gameId}}/edit" class="btn btn-primary">Volver a editar videojuego</a>
                             {{/errorgameedit}}
+                            {{#errorgameedit}}
+     <a href="/console/{{id}}/game/{{gameId}}/edit" class="btn btn-primary">
+        Volver a editar videojuego
+    </a>
+{{/errorgameedit}}
+
+{{#gameDeleted}}
+    <a href="{{consoleUrl}}" class="btn btn-primary">
+        Volver a consola
+    </a>
+{{/gameDeleted}}
+
 
 
 
