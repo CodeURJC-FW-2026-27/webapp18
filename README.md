@@ -89,3 +89,11 @@ The main objective of **Game4Life** is to provide a **simple and intuitive platf
 
 
 **Oriol Mendez**
+[Commit 1](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/b30fef75f200976df98d38b533f1fbde57f19918)
+[Commit 2](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/593167228860490417bbbb309b3688f82e34928c)
+[Commit 3](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/af4aea6ae043ba9526154fe907ebde164b63f7dc)
+[Commit 4](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/3aec725050576919c7ec36bed8426b7503fcf5b6)
+[Commit 5](https://github.com/CodeURJC-FW-2026-27/webapp18/commit/3ce89f550864d8856b595d1957e84ea567bb5667) 
+My main commits are centered mainly in the visual part like the pages and the images, also adding the search bar and filter by brand, I also added the data.json with the database example and the images and changes in the delete button from the videogames page.
+
+
